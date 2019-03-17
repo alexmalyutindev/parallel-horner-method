@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "mpi.h"
 
 double RandomDouble(double min = -1, double max = 1)
 {
