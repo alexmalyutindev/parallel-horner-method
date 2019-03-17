@@ -3,4 +3,4 @@ project(Sonay10)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Sonay10 main.cpp)
+add_executable(Sonay10 main.cpp Matrix.h)
