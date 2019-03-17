@@ -205,7 +205,11 @@ int main() {
 
     size_t threadsCount = 1;
 
-    std::cout << "Improved parallel Horner method " << threadsCount << " threads:" << std::endl;
+    std::cout << "Improved parallel Horner method:" << std::endl;
+	std::cout << "Matrix size: " << matrixSize << "x" << matrixSize << std::endl;
+	std::cout << "Polynomial rang: " << polinomialCoefs.size() << std::endl;
+	std::cout << "Threads: " << threadsCount << std::endl;
+
     clock_t begin = clock();
     TrueParallelHorner(polinomialCoefs, A, threadsCount);
     clock_t end = clock();
